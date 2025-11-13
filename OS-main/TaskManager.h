@@ -5,17 +5,17 @@
 #include "Queue.h"
 #include "Tasks.h"
 
+/** 
+ * @brief Class to manage and schedule tasks
+ * Handles the execution and management of tasks in a priority queue.
+ */
 class TaskManager{ 
 public:
     Queue<Task*> tasksPriorityPtrQueue;
     TaskManager();
     void run();
-    void pause();
     
 private:
     void kill();
-
 };
-
-
 #endif

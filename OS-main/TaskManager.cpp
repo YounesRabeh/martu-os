@@ -22,12 +22,6 @@ void TaskManager::run() {
     }
 }
 
-
-
-void TaskManager::pause(){
-
-}
-
 void TaskManager::kill(){
     tasksPriorityPtrQueue.dequeue();
 }

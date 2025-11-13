@@ -6,7 +6,10 @@
 // Function pointer type definition for program task
 typedef void (*Program_PTR)();
 
-// Base class for a Task
+/**
+ * @brief Class representing a task in the system
+ * Each task has a priority, a function to execute, and flags for completion and repeatability.
+ */
 class Task {
 public:
     uint8_t priority;
@@ -14,7 +17,6 @@ public:
     bool __isDone;
     bool __isRepeatable;
     Task(Program_PTR _program_, bool ___isRepeatable);
-    
 private:
     
 };

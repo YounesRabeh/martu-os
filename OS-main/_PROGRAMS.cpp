@@ -53,11 +53,10 @@ void _PROGRAMS::ledLoading(){
     for (uint8_t i = 3; i < 8; i++){
         pins.setPinMode(i, 1);
         uint32_t a = (uint32_t) (i - 2); 
-        //Scheduler::timedEvent(a*1000, _fn2_);
     }
 
     //_fn_();
-    
+    // This is just a demo sequence, you can modify the timing and order as needed.
     Scheduler::timedEvent(1000, _fn2_); //first led on
     Scheduler::timedEvent(10000, _fn3_); //3rd led off
     Scheduler::timedEvent(3000, _fn2_); //3nd led On 
@@ -68,19 +67,4 @@ void _PROGRAMS::ledLoading(){
     Scheduler::timedEvent(5000, _fn2_); //5nd led On 
     Scheduler::timedEvent(4000, _fn2_); //4nd led On 
     Scheduler::timedEvent(50, _fn4_);
-    
-    /* 
-    Scheduler::timedEvent(200, _fn4_);   // print 'P'
-    Scheduler::timedEvent(1000, _fn2_);  // first led on
-    Scheduler::timedEvent(2000, _fn2_);  // 2nd led On
-    Scheduler::timedEvent(3000, _fn2_);  // 3nd led On
-    Scheduler::timedEvent(4000, _fn2_);  // 4nd led On
-    Scheduler::timedEvent(5000, _fn3_);  // first led off
-    Scheduler::timedEvent(5000, _fn2_);  // 5nd led On
-    Scheduler::timedEvent(10000, _fn3_); // 3rd led off
-    Scheduler::timedEvent(20000, _fn3_); // 2nd led off
-    */
-
-
-    
 }

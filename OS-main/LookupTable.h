@@ -3,8 +3,13 @@
 
 #include <stdint.h>
 
+// Function pointer type definition
 typedef void (*Function_PTR)();
 
+/**
+ * @brief Class representing a lookup table stored in flash memory
+ * This class provides methods to add, remove, sort, and retrieve entries from the table.
+ */
 class LookupTable {
 public:
     LookupTable();
@@ -24,6 +29,9 @@ public:
     uint32_t getKey() const;
 
 private:
+    /**
+     * @brief Structure representing a single entry in the lookup table
+     */
     struct TableEntry {
         uint32_t key;
         Function_PTR value;
@@ -34,9 +42,9 @@ private:
 
     // Use PROGMEM for the fixed-size array
     TableEntry table[MaxSize];
-
+    // Current size of the table
     uint32_t size;
-
+    // Resize the table to a new size
     void resize(uint32_t newSize);
 };
 

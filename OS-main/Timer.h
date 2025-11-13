@@ -5,6 +5,11 @@
 #include <avr/interrupt.h> 
 #include <stdint.h>
 
+
+/**
+ * @brief Class to handle system timing operations
+ * Provides methods for delays and retrieving system time.
+ */
 class Timer{  
 public:
     Timer();
@@ -14,10 +19,7 @@ public:
     static uint32_t systemTime; 
     
 private:
-   // the time of the system 
+
 };
-
-
-
 #endif
 

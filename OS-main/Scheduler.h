@@ -7,6 +7,10 @@
 #include "Timer.h"
 
 
+/**
+ * @brief Class to handle scheduling of timed events
+ * Allows scheduling functions to be executed after a specified time.
+ */
 class Scheduler{
 public:
     Scheduler();
@@ -18,8 +22,4 @@ private:
 
 
 };
-
-
-
-
 #endif
