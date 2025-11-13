@@ -74,6 +74,5 @@ Also included are helper classes:
 
 For more details, open the corresponding `.h` files in `OS-main/`.
 
-## Notes
-
-- The code is intended as educational/demo code and not a production RTOS. It demonstrates concepts (task wrappers, queueing, timed callbacks) useful when learning about embedded scheduling.
+>[!NOTE]
+>The code is intended as educational/demo code and not a production RTOS. It demonstrates concepts (task wrappers, queueing, timed callbacks) useful when learning about embedded scheduling.
